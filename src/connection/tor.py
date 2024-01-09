@@ -17,7 +17,7 @@ def set_tor_proxy(enable=True):
         proxy_setting = f"socks5://127.0.0.1:{TOR_PROXY_PORT}"
         if enable:
             subprocess.run(["gsettings", "set", "org.gnome.system.proxy", "mode", "'manual'"])
-            subprocess.run(["gsettings", "set", "org.gnome.system.proxy", "socks", proxy_setting])
+            #subprocess.run(["gsettings", "set", "org.gnome.system.proxy", "socks", proxy_setting])
             #subprocess.run(['sudo', 'tee', '/etc/apt/apt.conf.d/80proxy'], input=f"Acquire::socks::proxy \"{proxy_setting}\";", text=True)
             print('\n')
             #print("Proxy enabled.")

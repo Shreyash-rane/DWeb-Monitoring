@@ -1,5 +1,5 @@
 from browser.search_engine import *
-#from browser.onion_visit import *
+from browser.onion_visit import *
 from connection.tor import *
 from database.database import *
 from analysis.analysis import *

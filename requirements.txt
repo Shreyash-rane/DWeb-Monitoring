@@ -1,10 +1,7 @@
 cachetools==5.3.2
 certifi==2023.11.17
 charset-normalizer==3.3.2
-<<<<<<< HEAD
 click==8.1.7
-=======
->>>>>>> origin/main
 idna==3.6
 pycryptodomex==3.19.0
 PySocks==1.7.1

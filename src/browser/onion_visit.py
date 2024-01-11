@@ -1,5 +1,5 @@
 import requests
-from database.database import *
+#from database.database import *
 from rich.console import Console
 
 def web_visitor(site_url,id):
@@ -20,14 +20,14 @@ def web_visitor(site_url,id):
         
     except requests.RequestException as e:
         console.print(f"[red] Error during request")
-        delete_query = "DELETE FROM master_table WHERE id = %s"
-        para =(id,)
-        execute_query(delete_query, para)
+        #delete_query = "DELETE FROM master_table WHERE id = %s"
+        #para =(id,)
+        #execute_query(delete_query, para)
         return  # Exit the function if there's an error
 
-    update_query = "UPDATE master_table SET result = %s WHERE id = %s"
-    para =(result,id)
+    #update_query = "UPDATE master_table SET result = %s WHERE id = %s"
+    #para =(result,id)
     console.print(f"[green] Adding to DB")
-    execute_query(update_query, para)
+    #execute_query(update_query, para)
 
 # Example usage

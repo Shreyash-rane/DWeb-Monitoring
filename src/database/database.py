@@ -110,7 +110,7 @@ def postgre_close_connection():
 # # Example use
 #postgre_connect()
 #drop_table("master_table")
-# drop_table("analytic_table")
+#drop_table("analytic_table")
 #create_table()
 # list_all_tables()
 # # Close the connection when done

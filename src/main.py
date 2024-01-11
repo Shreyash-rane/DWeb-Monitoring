@@ -164,9 +164,11 @@ def search_engine(query,engine):
 @click.option("--timeout",default=15,help="Request timeout time")
 def demospyder(timeout):
      console = Console()
+     '''
      ###################
-     # URL should be real
+      URL should be real
      ######################
+     '''
      with console.status("",spinner="aesthetic") as status:
                 i=0
                 while (i<100):
